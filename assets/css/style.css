@@ -1,0 +1,222 @@
+html {
+    overflow-x: hidden;
+    font-family: "poppins", "helvetica";
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FCD63F;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: auto;
+}
+
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header nav .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav .logo a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul {
+    display: flex;
+    width: 260px;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+main {
+    height: auto;
+    width: 100vw;
+}
+
+main .hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .hero .description-container {
+    width: 60%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+
+}
+
+main .hero aside {
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.content {
+    width: 100vw;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 3rem;
+
+}
+
+
+.content .GETO-card-container {
+    padding: 1rem;
+    padding-block: 3rem;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    width: 93vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-image:
+        linear-gradient(#e5e5e5 1px, transparent 1px),
+        linear-gradient(90deg, #e5e5e5 1px, transparent 1px);
+    background-size: 40px 40px;
+    box-shadow: 0 0 100px rgb(255, 239, 188);
+}
+
+
+.content .GETO-card-container img {
+    width: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px black;
+}
+
+.content .GETO-card-container .photo1,
+.content .GETO-card-container .photo2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.content .GETO-card-container .photo1 img {
+    transform: rotate(-4deg);
+}
+
+.content .GETO-card-container .photo2 img {
+    transform: rotate(4deg);
+}
+
+
+.content .GETO-card-container .photo2 {
+    flex-direction: row-reverse;
+}
+
+.content .GETO-card-container .photo1 .desc,
+.content .GETO-card-container .photo2 .desc {
+    padding: 1rem;
+}
+
+main .content .experience-card-container {
+    width: 100vw;
+    background-color: red;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+footer a {
+    color: rgb(130, 130, 250);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #FCD63F;
+}
+
+@media (max-width:760px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: auto;
+        padding: 0;
+    }
+
+    header nav ul li {
+        margin: 0;
+    }
+
+    main .hero {
+        flex-direction: column-reverse;
+    }
+
+    main .hero .description-container img {
+        padding-block: 2rem;
+    }
+
+    main .content .GETO-card-container {
+        max-width: 89%;
+        margin-left: 1rem;
+    }
+
+    main .content .GETO-card-container,
+    main .content .GETO-card-container .photo1,
+    main .content .GETO-card-container .photo2 {
+        flex-direction: column;
+    }
+
+    main .content .GETO-card-container .photo1 img,
+    main .content .GETO-card-container .photo2 img {
+        transform: rotate(0);
+        width: 500px;
+    }
+}
