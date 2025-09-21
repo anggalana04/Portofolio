@@ -217,6 +217,6 @@ footer a:hover {
     main .content .GETO-card-container .photo1 img,
     main .content .GETO-card-container .photo2 img {
         transform: rotate(0);
-        width: 500px;
+        width: 450px;
     }
 }
